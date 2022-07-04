@@ -1,0 +1,20 @@
+Package: Bayesfinemap
+Type: Package
+Title: Calculate Bayes Factors in Genetic Association Studies
+Version: 0.0.0.9000
+Authors@R: c(person("Kevin", "Walters", email = "k.walters@sheffield.ac.uk", 
+    role=c("aut", "cre")), person("Hannuun", "Yaacob", role="aut"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Calculates univariate Laplace and Wakefield Bayes factors for use
+    in population-based genetic association studies. It can be used with
+    genotype data or with haplotype data simulated from Hapgen2. If using
+    Hapgen2 data files it assumes an additive genetic model. It can handle
+    multiple datasets and can remove SNPs (from all datasets) falling below a
+    MAF threshold in at least one dataset. Optionaly it will also return an LD
+    matrix. It calculates true positive rates for use in ROC curves.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ROCR (>= 1.0-7)
+RoxygenNote: 7.1.2
